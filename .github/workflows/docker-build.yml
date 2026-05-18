@@ -39,4 +39,6 @@ jobs:
           context: .
           file: ./Dockerfile.optimized
           push: true
-          tags: kubetalhashaikh/docker-java-demo:latest
+          tags: |
+	    kubetalhashaikh/docker-java-demo:latest
+	    kubetalhashaikh/docker-java-demo:${{ github.sha }}
